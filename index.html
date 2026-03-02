@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pussy University — Official Website</title>
+  <meta name="description" content="Pussy University Official Website — Latest update on your application." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#application">Skip to application</a>
+
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <img class="crest" src="assets/pu-logo.jpeg" alt="Pussy University crest: PU mark and wordmark." />
+      <div class="header-text">
+        <p class="overline">Office of Admissions &amp; Matriculation</p>
+        <h1 class="site-title">Pussy University</h1>
+        <p class="tagline">Official Website</p>
+      </div>
+    </div>
+  </header>
+
+  <main role="main" class="page">
+    <section id="landing" class="card hero" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h2 id="hero-title" class="hero-title">Hello, <span class="name">Sherisa Yang</span>.</h2>
+          <p class="hero-subtitle">
+            Welcome to <span class="smallcaps">Pussy University</span> Official Website.
+            This is the lately updated on your application.
+          </p>
+
+          <div class="hero-actions">
+            <button id="viewBtn" class="btn primary" type="button" aria-controls="application">
+              View the Application
+            </button>
+            <button id="printBtn" class="btn" type="button" title="Print a paper copy">
+              Print
+            </button>
+          </div>
+
+          <dl class="facts" aria-label="Applicant summary">
+            <div class="fact">
+              <dt>Applicant</dt>
+              <dd>Sherisa Yang</dd>
+            </div>
+            <div class="fact">
+              <dt>Application ID</dt>
+              <dd>PU-ADM-<span id="appId"></span></dd>
+            </div>
+            <div class="fact">
+              <dt>Status</dt>
+              <dd><span class="badge success" id="statusBadge">Decision Released</span></dd>
+            </div>
+            <div class="fact">
+              <dt>Term</dt>
+              <dd>Fall 2026</dd>
+            </div>
+          </dl>
+        </div>
+
+        <aside class="hero-aside" aria-label="University notice">
+          <div class="notice">
+            <h3 class="notice-title">Notice of Record</h3>
+            <p class="notice-body">
+              This portal is maintained by the Office of Admissions &amp; Matriculation.
+              All posted updates reflect the most current administrative record available to this office.
+            </p>
+            <p class="notice-body">
+              Please review the application letter below and complete the required confirmations prior to the stated deadlines.
+            </p>
+            <p class="notice-sign">
+              — Registrar’s Desk
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="application" class="card letter" aria-labelledby="letter-title">
+      <div class="letter-header">
+        <div>
+          <p class="letter-kicker">Pussy University</p>
+          <h2 id="letter-title" class="letter-title">Offer of Admission</h2>
+          <p class="letter-meta">
+            Issued by the Office of Admissions &amp; Matriculation
+            <span class="dot" aria-hidden="true">•</span>
+            <span id="issueDate"></span>
+          </p>
+        </div>
+        <div class="letter-stamp-wrap" aria-hidden="true">
+          <div id="stamp" class="letter-stamp">ADMITTED</div>
+        </div>
+      </div>
+
+      <div class="letter-body" id="letterBody">
+        <p class="salutation">Dear <strong>Sherisa Yang</strong>,</p>
+
+        <p>
+          After a comprehensive review conducted with due solemnity (and a suspiciously large number of red pens),
+          the Admissions Committee is pleased to extend to you an official
+          <strong>Offer of Admission</strong> to <strong>Pussy University</strong> for the <strong>Fall 2026</strong> term.
+        </p>
+
+        <p>
+          You have been admitted to the <strong>College of Established Seriousness</strong> as a candidate for the
+          <strong>Bachelor of Arts in Classical Administration &amp; Ceremonial Logistics</strong>.
+          This program emphasizes disciplined writing, persuasive formatting, respectful hallway walking, and the responsible
+          handling of important-looking folders.
+        </p>
+
+        <h3 class="section-title">Enrollment Details</h3>
+        <dl class="detail-grid">
+          <div class="detail">
+            <dt>Student Name</dt>
+            <dd>Sherisa Yang</dd>
+          </div>
+          <div class="detail">
+            <dt>Major</dt>
+            <dd>Classical Administration &amp; Ceremonial Logistics (B.A.)</dd>
+          </div>
+          <div class="detail">
+            <dt>Entry Term</dt>
+            <dd>Fall 2026</dd>
+          </div>
+          <div class="detail">
+            <dt>Campus</dt>
+            <dd>Main Quadrangle (North Gate)</dd>
+          </div>
+          <div class="detail">
+            <dt>Orientation</dt>
+            <dd>Monday, 25 August 2026, 09:00</dd>
+          </div>
+          <div class="detail">
+            <dt>Housing</dt>
+            <dd>Provisional placement: East Cloister Residence Hall</dd>
+          </div>
+          <div class="detail">
+            <dt>Scholarship</dt>
+            <dd>Founders’ Merit Grant: USD $6,000 (applied to tuition)</dd>
+          </div>
+          <div class="detail">
+            <dt>Deposit</dt>
+            <dd>USD $420 (non‑refundable, credited toward first term fees)</dd>
+          </div>
+        </dl>
+
+        <h3 class="section-title">Fees &amp; Financial Schedule</h3>
+        <p class="muted">
+          The figures below are assessed by the Bursar’s Office and may include mandatory academic robe maintenance.
+        </p>
+
+        <div class="table-wrap" role="region" aria-label="Fee table" tabindex="0">
+          <table class="fees">
+            <thead>
+              <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Amount (USD)</th>
+                <th scope="col">Due Date</th>
+                <th scope="col">Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Enrollment Deposit</td>
+                <td>$420</td>
+                <td><strong>15 May 2026</strong></td>
+                <td>Required to secure your place.</td>
+              </tr>
+              <tr>
+                <td>Tuition (Fall 2026)</td>
+                <td>$19,800</td>
+                <td><strong>01 Aug 2026</strong></td>
+                <td>Merit grant applied after confirmation.</td>
+              </tr>
+              <tr>
+                <td>University Fee</td>
+                <td>$860</td>
+                <td>01 Aug 2026</td>
+                <td>Library, archives, and corridor echo upkeep.</td>
+              </tr>
+              <tr>
+                <td>Student Services Fee</td>
+                <td>$540</td>
+                <td>01 Aug 2026</td>
+                <td>Includes official letterhead monitoring.</td>
+              </tr>
+              <tr>
+                <td>Housing (standard)</td>
+                <td>$7,200</td>
+                <td>01 Aug 2026</td>
+                <td>Provisional until room assignment is finalized.</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th scope="row">Estimated Total (before aid)</th>
+                <th>$28,400</th>
+                <th colspan="2">Subject to final billing statement.</th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <h3 class="section-title">Required Confirmations</h3>
+        <ol class="steps">
+          <li>
+            <strong>Review the offer letter</strong> in full, including all fees and deadlines.
+          </li>
+          <li>
+            <strong>Confirm enrollment</strong> below. Upon confirmation, the admissions stamp will be applied to this letter.
+          </li>
+          <li>
+            <strong>Submit the enrollment deposit</strong> by <strong>15 May 2026</strong>.
+          </li>
+          <li>
+            <strong>Complete the Matriculation Form</strong> (available after confirmation) to select courses and confirm housing preferences.
+          </li>
+        </ol>
+
+        <details class="accordion">
+          <summary>Next Steps (click to expand)</summary>
+          <div class="accordion-body">
+            <ul class="bullets">
+              <li><strong>Academic Advising:</strong> Your preliminary advisor will contact you within 7 business days.</li>
+              <li><strong>Placement Writing Sample:</strong> Submit a 400–600 word formal memo on an ordinary object, written as if it were historically significant.</li>
+              <li><strong>Identification Photo:</strong> Front-facing, neutral expression, as though you have just discovered a footnote.</li>
+              <li><strong>Dress Code:</strong> Respectfully academic. Dramatic capes permitted during midterms.</li>
+            </ul>
+          </div>
+        </details>
+
+        <div class="confirm-box" aria-label="Enrollment confirmation">
+          <h3 class="section-title">Enrollment Confirmation</h3>
+
+          <p class="muted">
+            Please acknowledge the statement below to enable the confirmation button.
+          </p>
+
+          <label class="check">
+            <input id="ack" type="checkbox" />
+            <span>
+              I, <strong>Sherisa Yang</strong>, acknowledge that I have read the fees and deadlines and will uphold the dignity of official stationery.
+            </span>
+          </label>
+
+          <div class="confirm-actions">
+            <button id="confirmBtn" class="btn primary" type="button" disabled>
+              Confirm Enrollment
+            </button>
+            <button id="resetBtn" class="btn" type="button">
+              Reset
+            </button>
+          </div>
+
+          <p class="confirm-status" id="confirmStatus" aria-live="polite">
+            Status: <span class="badge" id="confirmBadge">Not Confirmed</span>
+          </p>
+
+          <div class="signature">
+            <div class="sig-line"></div>
+            <p class="sig-name">Dean of Admissions</p>
+            <p class="sig-title">Office of Admissions &amp; Matriculation</p>
+          </div>
+        </div>
+
+        <p class="closing">
+          We congratulate you on this achievement and look forward to welcoming you to our quadrangle, our libraries,
+          and our extremely serious meetings about extremely serious things.
+        </p>
+
+        <p class="valediction">
+          Respectfully,<br />
+          <strong>Office of Admissions &amp; Matriculation</strong><br />
+          Pussy University
+        </p>
+      </div>
+
+      <div class="letter-footer">
+        <p class="fineprint">
+          Reference: PU-ADM-<span id="appId2"></span> • Please retain a copy of this letter for your records.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>
+      © <span id="year"></span> Pussy University • Office of Admissions &amp; Matriculation
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
